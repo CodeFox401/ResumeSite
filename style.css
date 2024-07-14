@@ -1,6 +1,14 @@
+:root {
+    color-scheme: light dark;
+}
+html {
+    min-height: 100vh;
+}
+
 body {
     --text-color: #222;
     --bkg-color: #fff;
+    min-height: 100vh;
   }
   body.dark-theme {
     --text-color: #eee;
