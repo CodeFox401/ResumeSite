@@ -3,11 +3,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeIcon = document.getElementById('theme-toggle-img');
     const lightModeIconSrc = 'images/light-mode.png';
     const darkModeIconSrc = 'images/dark-mode.png';
+    const lightModeLink = document.getElementById('light-mode');
+    const darkModeLink = document.getElementById('dark-mode');
 
     function toggleDarkMode() {
-        if (themeIcon.src.endsWith(lightModeIconSrc)) {
+        if (darkModeLink.disabled) {
+            lightModeLink.disabled = true;
+            darkModeLink.disabled = false;
             themeIcon.src = darkModeIconSrc;
         } else {
+            lightModeLink.disabled = false;
+            darkModeLink.disabled = true;
             themeIcon.src = lightModeIconSrc;
         }
     }
