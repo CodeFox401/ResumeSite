@@ -1,24 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="color-scheme" content="dark light">
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css">
-    <link id="light-mode" rel="stylesheet" href="light-mode.css">
-    <link id="dark-mode" rel="stylesheet" href="dark-mode.css" disabled>
 
-  </head>
-  <body>
-    <button id="btn-toggle-darkmode">Change button
-      <img id="theme-toggle-img" src="images/light-mode.png" alt="Image">
-    </button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="color-scheme" content="dark light">
+  <title>John Chiki Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link id="light-mode" rel="stylesheet" href="light-mode.css">
+  <link id="dark-mode" rel="stylesheet" href="dark-mode.css" disabled>
+
+</head>
+
+<body>
+  <script src="darkmode.js"></script>
+  <header>
+    <div class="container">
+      <h1>John Chiki</h1>
+      <p>Pro Procrastinator</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Homepage.html">About Me</a></li>
+        <li><a href="Template.html">Template</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Personal Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><button id="btn-toggle-darkmode" class="btn-toggle-darkmode">
+                <img id="theme-toggle-img" src="images/light-mode.png" alt="Image" width="20">
+            </button></li>
+    </ul>
+</nav>
+
+  <div class="container main-content">
     <h1 id="h1">This is My website!!</h1>
     <h2>Hello world!</h2>
     <p>This site sucks and I know it. I know how this works and can commit changes and redeploy</p>
-    <footer><a href="https://www.flaticon.com/free-icons/dark" title="dark icons">Dark icons created by adriansyah - Flaticon</a></footer>
-    <script src="darkmode.js"></script>
-  </body>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Your Name. All rights reserved.</p>
+    <a href="https://www.flaticon.com/free-icons/dark" title="dark icons">Dark icons created by adriansyah -
+      Flaticon</a>
+  </footer>
+</body>
+
 </html>
